@@ -1,4 +1,4 @@
-# Pak Ming Lau
+# Pak Ming Lau (with Kelly Huang and Erin Lee)
 # SoftDev
 # K05 -- Teamwork, but Better This Time
 #   Write a program that prints the name of a randomly selected student from KREWES
