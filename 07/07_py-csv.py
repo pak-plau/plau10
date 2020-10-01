@@ -50,3 +50,5 @@ def randomJob():
         if(randomFloat <= dict[i]):
             print(i)
             break
+
+randomJob()
