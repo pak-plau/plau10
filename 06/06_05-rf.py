@@ -1,4 +1,3 @@
-#!/usr/bin/python
 # Team Blue Bird
 # Pak Ming Lau (with Constance Chen and Ryan Ma)
 # K06 -- Learnination Through Amalgamation
@@ -13,16 +12,19 @@ KREWES = {
     'endymion': ['JASON', 'DEAN', 'MADDIE', 'SAQIF', 'CINDY', 'YI LING', 'RUOSHUI', 'FB', 'MATTHEW', 'MAY', 'ERIN', 'MEIRU']
 }
 
+# chooses and prints a random name from KREWES
 def printRandomName():
     team = random.choice(list(KREWES.keys()))
     print("\n" + random.choice(KREWES[team]) + " of team " + team + "\n")
 
+# chooses and prints random name from a single team in KREWES
 def printRandomNameOfChosenTeam():
-    team = input("\nPlease type in the name of the team you want to randomly select a person from.(orpheus, rex, or endymion)\n").lower()
-    while team not in KREWES:
+    team = input("\nPlease type in the name of the team you want to randomly select a person from.(orpheus, rex, or endymion)\n").lower()   # prompts user to select a team
+    while team not in KREWES:   # checks if name is in KREWES
         team = input("\nError, not a team name, please input a valid team name\n").lower()
-    print("\n" + random.choice(KREWES[team]) + " of team " + team + "\n")
+    print("\n" + random.choice(KREWES[team]) + " of team " + team + "\n") #prints name
 
+# prompts the user to either choose a random name from KREWES as a whole or a single team
 def main():
     while True:
         answer = input("What would you like to do? (Input the number of your choice)\n0. Receive a random name from KREWES\n1. Choose a team to receive a random name from\n2. Exit\n")
