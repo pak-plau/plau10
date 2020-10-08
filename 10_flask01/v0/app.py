@@ -1,3 +1,7 @@
+# Clyde 'Thluffy' Sinclair
+# SoftDev -- Rona Ed.
+# Oct 2020 
+
 from flask import Flask
 app = Flask(__name__) # Q0: Where have you seen similar syntax in other langs?
 
@@ -7,3 +11,4 @@ def hello_world():
     return "No hablo queso!"  # Q3: Will this appear anywhere? How u know?
 
 app.run()  # Q4: Where have you seen similar construcs in other languages?
+                
