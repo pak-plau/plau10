@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>Team Alpak-a</title>
-    </head>
-    <body>
-        <h1>Roster, occupations, etc.</h1>
-        <p>{{ roster }}</p>
-        <br />
-        <br />
-        <p>{{ occupationRandom }}</p>
-        <table>
-            <thead><tr><td>Job</td><td>Percentage</td></tr></thead>
-            {% for key, value in occupationDict.items() %}
-            <tr><td>{{ key }}</td><td>{{ value }}</td></tr>
-            {% endfor %}
-            <tr><td>Total: </td><td>{{ occupationSum }}</td></tr>
-        </table>
-    </body>
+<!--
+  Clyde 'Thluffy' Sinclair
+  SoftDev -- Rona Ed.
+  Oct 2020
+ -->
+
+<html>
+
+  <head>
+    <title> {{ foo }} </title>
+  </head>
+
+  <body>
+    {% for item in collection %}
+     {{ item }}
+     <br>
+    {% endfor %}
+  </body>
+
 </html>
