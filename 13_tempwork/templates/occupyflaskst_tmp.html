@@ -5,17 +5,17 @@
         <title>Team Alpak-a</title>
     </head>
     <body>
-        <h1>Roster, occupations, etc.</h1>
-        <p>{{ roster }}</p>
-        <br />
-        <br />
-        <p>{{ occupationRandom }}</p>
+        <h1>Team Alpak-A: Occupations</h1>
+        <p>Alvin Wu, Pak Ming Lau, Ian Chen A. </p>
+        <hr>
+        <p>Random Occupation: {{ occupationRandom }}</p>
         <table>
             <thead><tr><td>Job</td><td>Percentage</td></tr></thead>
             {% for key, value in occupationDict.items() %}
             <tr><td>{{ key }}</td><td>{{ value }}</td></tr>
             {% endfor %}
-            <tr><td>Total: </td><td>{{ occupationSum }}</td></tr>
+            <tr><td>Total: </td><td>{{ totals }}</td></tr>
         </table>
     </body>
 </html>
+
