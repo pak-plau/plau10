@@ -6,9 +6,9 @@
 from flask import Flask, render_template
 import csv
 from random import choices
-app = Flask(__name__) 
+app = Flask(__name__)
 
-@app.route("/") 
+@app.route("/")
 def hello_world():
     return "This is not the page you are looking for" #this is not the page we're looking for
 
@@ -27,8 +27,8 @@ def test_tmplt(): #Pak's function from previous work
     key = list(occupations.keys())
     values = list(occupations.values())
     occupationR = choices(key, weights=values, k=1)[0]
-    return render_template('occupyflaskst_tmp.html',occupationDict = occupations,occupationRandom = occupationR,totals = total, linkdict = links) #fill in variables in template
-    
+    return render_template('tablified.html',occupationDict = occupations,occupationRandom = occupationR,totals = total, linkdict = links) #fill in variables in template
+
 if __name__ == "__main__":
     app.debug = True
     app.run()
