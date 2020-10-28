@@ -1,0 +1,33 @@
+Pak Ming Lau
+Soft Dev
+LJ00 -- Le Voyage de Learnination avec Mongo, Première Phase
+    - Do Chapter 2 of MongoDB University and note anything notable
+01-29-20
+
+MongoDB stores data in JSON and BSON files
+    - JSON (JavaScript Standard Object Notation)
+        - Start and end with {}
+        - Separate each key and value with :
+        - Separate each key:value pair with ,
+        - "keys" must be surrounded with ""
+        - "keys" = "fields"
+        - Pros: friendly, readable, familiar
+        - Cons: text-based, space-consuming, limited data types
+    - BSON (Binary JSON)
+        - Invented to bridge the gap between binary representation and JSON format
+        - Optimized for speed, space, flexibility
+        - High performance with a general-purpose focus
+        - Encoding is Binary instead of UFT-8 String for JSON
+        - Supports more data types that JSON
+        - Readability is machine only
+        - MongoDB stores data using BSON
+            - But JSON can still be used
+mongodump (exports data in BSON)
+mongoexport (exports data in JSON)
+URI string (Uniform Resource Identifier)
+    - srv - establishes a secure connection
+mongorestore (imports data in BSON dump)
+mongoimport (imports data in JSON)
+find() (finds information in collections)
+it (iterates through a cursor, which is a pointer to a set of a query)
+pretty() (makes data easier to read)

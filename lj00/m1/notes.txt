@@ -1,0 +1,21 @@
+Pak Ming Lau
+Soft Dev
+LJ00 -- Le Voyage de Learnination avec Mongo, Première Phase
+    - Do Chapter 1 of MongoDB University and note anything notable
+01-29-20
+
+database - structured way to store and access data
+MongoDB is a NoSQL database
+    - No related tables of data
+        - No rows or columns
+    - Data is stored as documents
+    - Documents are stored in collections
+MongoDB Atlas helps with data storage and retrieval
+    - Uses clusters (a group of servers that stores your data)
+        - Replica set (a few connected MongoDB instances that store the same data)
+            - If a server fails, the other servers have the information ready to use
+    - Manages cluster creation
+    - Runs and maintains database deployment
+    - Uses cloud service provider of your choice
+    - Allows you to experiment with new tools and features
+    
