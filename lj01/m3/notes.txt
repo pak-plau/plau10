@@ -1,0 +1,33 @@
+Pak Ming Lau
+Soft Dev
+LJ01 -- Le Voyage de Learnination avec Mongo, Deuxième Phase
+    - Do Chapter 3 of MongoDB University and note anything notable
+11-12-20
+
+Every document has a unique _id value
+    - ObjectId(), default _id value type (_id doesn't necessarily needs to be of this type)
+findOne() finds a random document to see the format or you can add a query to find
+You cannot insert documents with the same _id field into a collection
+You can insert a document without an _id field
+    - A random _id is automatically added
+Documents can be identical in the collection, so long as their _id value is different
+You can place multiple documents into a collection but insert([<>,<>,<>]) (arrays)
+When inserting multiple documents with the same _id, only the first is inserted, the rest don't regardless of whether or not they have separate _id values
+    - insert([], {"ordered": false}) inserts all documents, then provides errors to duplicates
+You can insert documents into a collection that doesn't exist and it will create a new one for you
+    - same for databases
+We can update documents
+    - updateOne() only updates the first document it can find given a query
+    - updateMany() updates all documents that matches a query
+        - updateMany(), first parameter is the query, second is what's being updated
+            - {"$inc": {"pop": 10}} increments the population by 10
+                - $inc also takes in multiple fields
+            - {"$set": {"pop": 17630}} updates the population to 17630
+                - also adds the field to the document if it doesn't exist
+                - $set can also take in multiple fields
+            - {"$push": {"scores" : {"type": "extra credit", "score", 100}} adds an element to an array field
+We can delete documents
+    - deleteOne() should really only be used with the _id query
+    - deleteMany() takes in a query and deletes all files that have that field
+drop() deletes collections
+Removing all collections in a database also removes the database
