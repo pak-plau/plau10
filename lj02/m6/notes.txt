@@ -1,0 +1,14 @@
+Pak Ming Lau
+Soft Dev
+LJ02 -- Le Voyage de Learnination avec Mongo, Troisième Phase
+    - Do Chapter 6 of MongoDB University and note anything notable
+11-25-20
+
+- The Atlas can also create, view, and search indexes, and create aggregation pipelines to be imported to different languages
+- Atlas can show multiple projects and the teams that are working on them
+- Realm helps with web and mobile app development (databases)
+- Charts helps with data visualization
+- never touch admin, config, and local databases
+- Compass is an app that works much like a data explorer for MongoDB
+    - Works similarly to Atlas
+    - a Graphical User Interface Product

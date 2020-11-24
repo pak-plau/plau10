@@ -1,0 +1,28 @@
+Pak Ming Lau
+Soft Dev
+LJ02 -- Le Voyage de Learnination avec Mongo, Troisième Phase
+    - Do Chapter 5 of MongoDB University and note anything notable
+11-25-20
+
+- Aggregation framework - another way to query data in MongoDB
+    - use .aggregate() instead of .find()
+    - .aggregate() take in an array and works like a pipeline
+    - {$match: {"amenities":"Wifi"}}, filters out files that don't have Wifi as an amenity
+    - {$project: {"price": 1, "address": 1, "_id": 0}}, show only the price and address and exclude the id
+    - $group takes in a stream of data and puts it into different distinct reservoirs
+    - {$group:
+        {
+            _id: "$address.country", // Group By Expression
+            <field1>: {<accumulator1> : <expression1>},
+            ...
+        }}
+        - groups all of the files with the same country into one file (helps shows how many distinct countries there are)
+- .sort() is a cursor method (applied not to data, but to a stream of it) (.find().sort())
+- .limit() limits sort to a certain number of results (show only the top 3, or top 5)
+- we can use indexes to speed up queries
+    - .createIndex({"birth year": 1}) creates an index based on birth year
+        - avoids sorting
+- data is stored in the way that it is used
+    - data that is used together should be stored together
+- upsert, update and insert, default is false
+    - if there is a match, then update, if not, insert
