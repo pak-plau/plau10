@@ -36,11 +36,19 @@ def authenticate():
     if(request.method == "GET"):
         print("***DIAG: request.args['username']  ***")
         print(request.args['username'])
-        return render_template("response.html", username = request.args["username"], reqMethod = request.method)
+        if(not request.args["username"]):
+            user = "Blank"
+        else:
+            user = request.args["username"]
+        return render_template("response.html", username = user, reqMethod = request.method)
     else:
         print("***DIAG: request.form['username']  ***")
         print(request.form['username'])
-        return render_template("response.html", username = request.form["username"], reqMethod = request.method)
+        if(not request.form["username"]):
+            user = "Blank"
+        else:
+            user = request.form["username"]
+        return render_template("response.html", username = user, reqMethod = request.method)
 
 if __name__ == "__main__":
     app.debug = True
