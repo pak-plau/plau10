@@ -1,0 +1,2 @@
+- instead of urllib2.urlopen(), it is urllib.request.urlopen()
+- in .gitignore, we can ignore files by putting their relative filepath
