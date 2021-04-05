@@ -7,7 +7,7 @@ f = open("key_nasa.txt", "r")
 link = "https://api.nasa.gov/planetary/apod?api_key=" + f.read()
 f.close()
 
-@app.route("/", methods=["GET", "POST"])
+@app.route("/", methods=["GET"])
 def root():
     u = urllib.request.urlopen(link)
     data = json.loads(u.read())
