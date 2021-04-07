@@ -11,7 +11,7 @@ f.close()
 def root():
     u = urllib.request.urlopen(link)
     data = json.loads(u.read())
-    return render_template("main.html", image=data["url"])
+    return render_template("main.html", image=data["url"], explanation=data["explanation"])
 
 if __name__ == "__main__":
     app.debug = True
