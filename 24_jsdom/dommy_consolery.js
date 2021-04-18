@@ -1,21 +1,3 @@
-/*
-   your PPTASK:
-
-   Test drive each bit of code in this file,
-    and insert comments galore, indicating anything
-     you discover,
-    	have questions about,
-    		or otherwise deem notable.
-
-    		Write with your future self or teammates in mind.
-
-    		If you find yourself falling out of flow mode, consult
-    		other teams
-    		MDN
-   A few comments have been pre-filled for you...
-
-   (delete this block comment once you are done)
-*/
 // Team lauma v2 :: Pak Ming Lau, Ryan Ma
 // SoftDev pd1
 // K23 -- JS Functionality
