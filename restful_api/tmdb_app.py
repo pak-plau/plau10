@@ -4,7 +4,7 @@ import urllib, json
 app = Flask(__name__)
 
 f = open("keys/tmdb.txt", "r")
-link = "https://api.themoviedb.org/3/discover/movie?with_genres=28&page=2&api_key=" + f.read()
+link = "https://api.themoviedb.org/3/discover/movie?with_genres=28,12&page=2&api_key=" + f.read()
 f.close()
 
 @app.route("/", methods=["GET"])
