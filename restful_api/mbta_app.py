@@ -3,15 +3,15 @@ import urllib, json
 
 app = Flask(__name__)
 
-f = open("key_nasa.txt", "r")
-link = "https://api.nasa.gov/planetary/apod?api_key=" + f.read()
+f = open("keys/mbta.txt", "r")
+link = "https://api-v3.mbta.com/routes/?filter[id]=Red"#?api_key=" + f.read()
 f.close()
 
 @app.route("/", methods=["GET"])
 def root():
     u = urllib.request.urlopen(link)
     data = json.loads(u.read())
-    return render_template("main.html", image=data["url"], explanation=data["explanation"])
+    return render_template("data.html", data=data)
 
 if __name__ == "__main__":
     app.debug = True

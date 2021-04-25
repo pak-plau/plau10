@@ -4,6 +4,10 @@
         <meta charset="utf-8"/>
     </head>
     <body>
-       {{ data }}
+        {% for item in data.results %}
+            {{ item }}
+            <br>
+            <br>
+       {% endfor %}
     </body>
 </html>
