@@ -4,16 +4,14 @@
         <meta charset="utf-8"/>
     </head>
     <body>
-        {% for item in data.results %}
-            {{ item }}
-            <br>
-            <br>
-        {% endfor %}
         {{ extra }}
+        <br>
+        <br>
         <br>
         <br>
         {% for i in data1.results %}
             {{ i }}
+            {{ i.release_date }}
             <br>
             <br>
         {% endfor %}
