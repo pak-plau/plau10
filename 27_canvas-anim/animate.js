@@ -1,6 +1,6 @@
 // Team javabean -- Pak Ming Lau, Eric Lo
 // SoftDev pd1
-// K27 -- canvas based JS animation with a dvd screensaver
+// K27 -- Guarding against burnout
 // 2021-05-09
 
 //access canvas and buttons via DOM
